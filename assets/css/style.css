@@ -1,3 +1,12 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 html,
 body {
     margin: 0;
@@ -11,7 +20,7 @@ h2 {
     color: darkred;
 }
 
-h3, 
+h3,
 p,
 li {
     color: green;
@@ -24,12 +33,13 @@ img {
 }
 
 main {
-    margin: 0 20%;
+    /* margin: 0 20%; */
 }
 
 nav {
     background-color: beige;
     padding: 10px;
+    width: 100%;
 }
 
 nav ul {
@@ -46,6 +56,7 @@ nav a {
     font-size: 1.6em;
     color: green;
     margin-right: 25px;
+    padding: 0.5rem 1.5rem;
 }
 
 nav a:hover {
@@ -53,7 +64,7 @@ nav a:hover {
 }
 
 #banner {
-    width: 100%;
+    width: 60%;
     height: auto;
     background-color: white;
 }
@@ -63,6 +74,11 @@ nav a:hover {
     height: auto;
 }
 
+#list {
+    display: flex;
+    flex-wrap: wrap;
+       justify-content: space-around;
+}
 .service {
     display: inline-block;
     background-color: white;
@@ -72,15 +88,70 @@ nav a:hover {
     font-size: 2em;
     padding: 20px;
     margin: 10px;
+    text-align: center;
+
 }
 
 table {
     border: 3px solid black;
     width: 100%;
 }
-  
+
 td,
 th {
     border: 1px solid black;
     padding: 5px;
+}
+
+
+/* About */
+.locations{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.locations li {
+    border: 1px solid grey;
+    padding: 1rem 3rem;
+    margin: 1rem 4rem;
+}
+
+
+/* Menu */
+
+table{
+    width: 60%;
+    margin: auto;
+}
+/* @media screen and (max-width: 1200){
+#list {
+ justify-content: space-around;
+} */
+
+h2{
+    padding: 1.5rem;
+}
+
+
+p {
+    margin: 1rem;
+}
+header{
+    background-color: black;
+  margin-top: 0;
+}
+
+header p{
+    color: white;
+}
+
+footer{
+    width: 100%;
+    background-color: pink;
+    margin-bottom: 0;
+    margin-top: 5rem;
+    position: relative;
 }
